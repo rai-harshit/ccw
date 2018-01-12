@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jan 12, 2018 at 09:18 AM
+-- Generation Time: Jan 12, 2018 at 01:21 PM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
 
@@ -50,6 +50,51 @@ INSERT INTO `accounts` (`roll_no`, `email`, `password`, `created_on`, `acc_statu
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `blogs`
+--
+
+CREATE TABLE `blogs` (
+  `blog_id` int(10) NOT NULL,
+  `roll_no` int(6) NOT NULL,
+  `blog_timestamp` datetime NOT NULL,
+  `blog_title` varchar(100) NOT NULL,
+  `blog_author` varchar(32) NOT NULL,
+  `blog_content` varchar(1500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `blogs`
+--
+
+INSERT INTO `blogs` (`blog_id`, `roll_no`, `blog_timestamp`, `blog_title`, `blog_author`, `blog_content`) VALUES
+(101, 501550, '2018-01-12 07:23:30', 'First Blog', 'Harshit Rai', 'This is my First Blog'),
+(102, 501549, '2018-01-24 08:00:40', 'Second Blog', 'Akash Phalke', 'This is Phalke\'s First Blog'),
+(103, 501550, '2018-01-12 16:14:42', 'ghjagdjhgad', 'Harshit Rai', 'iyuiyadyidaadadada'),
+(104, 501550, '2018-01-12 16:15:21', 'fkjsfhyerieyrwi', 'Harshit Rai', 'qriyqieyqie68368768');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bug_reports`
+--
+
+CREATE TABLE `bug_reports` (
+  `report_id` int(11) NOT NULL,
+  `name` varchar(32) NOT NULL,
+  `email` varchar(64) NOT NULL,
+  `bug_info` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `bug_reports`
+--
+
+INSERT INTO `bug_reports` (`report_id`, `name`, `email`, `bug_info`) VALUES
+(1, 'Harshit Rai', 'harshitrai68@gmail.com', '532432424');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `profiles`
 --
 
@@ -77,6 +122,32 @@ INSERT INTO `profiles` (`roll_no`, `first_name`, `last_name`, `gender`, `contact
 (501549, 'akash', 'phalke', 'male', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (501550, 'Harshit', 'Rai', 'male', NULL, NULL, NULL, NULL, 'coding,hacking', 'c,Java,PHP,Python,HTML,CSS,JavaScript', NULL);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `project_requests`
+--
+
+CREATE TABLE `project_requests` (
+  `request_id` int(11) NOT NULL,
+  `name` varchar(32) NOT NULL,
+  `email` varchar(64) DEFAULT NULL,
+  `contact` varchar(10) NOT NULL,
+  `profession` varchar(32) NOT NULL,
+  `organization` varchar(64) NOT NULL,
+  `project_type` varchar(10) NOT NULL,
+  `project_description` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `project_requests`
+--
+
+INSERT INTO `project_requests` (`request_id`, `name`, `email`, `contact`, `profession`, `organization`, `project_type`, `project_description`) VALUES
+(2, 'Harshit Rai', 'harshitrai68@gmail.com', '8452904404', 'Student', 'FCRIT, Vashi', 'hardware', '		Some random shit here	'),
+(3, 'Harshit Rai', 'harshitrai68@gmail.com', '8452904404', 'Student', 'FCRIT, Vashi', 'hardware', '		Some random shit here	'),
+(4, 'Nathan Nunes', 'nanu@gmail.com', '9679679678', 'Fuck Boy', 'PornHub', 'software', 'Design a new porn website with Desktop VR feature enabled.');
+
 --
 -- Indexes for dumped tables
 --
@@ -89,6 +160,19 @@ ALTER TABLE `accounts`
   ADD UNIQUE KEY `email` (`email`);
 
 --
+-- Indexes for table `blogs`
+--
+ALTER TABLE `blogs`
+  ADD PRIMARY KEY (`blog_id`),
+  ADD UNIQUE KEY `blog_title` (`blog_title`);
+
+--
+-- Indexes for table `bug_reports`
+--
+ALTER TABLE `bug_reports`
+  ADD PRIMARY KEY (`report_id`);
+
+--
 -- Indexes for table `profiles`
 --
 ALTER TABLE `profiles`
@@ -96,7 +180,32 @@ ALTER TABLE `profiles`
   ADD UNIQUE KEY `contact` (`contact`),
   ADD UNIQUE KEY `github` (`github`),
   ADD UNIQUE KEY `linkedin` (`linkedin`);
-COMMIT;
+
+--
+-- Indexes for table `project_requests`
+--
+ALTER TABLE `project_requests`
+  ADD PRIMARY KEY (`request_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `blogs`
+--
+ALTER TABLE `blogs`
+  MODIFY `blog_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
+--
+-- AUTO_INCREMENT for table `bug_reports`
+--
+ALTER TABLE `bug_reports`
+  MODIFY `report_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `project_requests`
+--
+ALTER TABLE `project_requests`
+  MODIFY `request_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
