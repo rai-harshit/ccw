@@ -41,7 +41,7 @@ else
 	<title>CC : Blogs</title>
 </head>
 <body>
-	<form id=blod_add_form action="add_blogs.php">
+	<form id=add_blogs action="add_blogs.php">
 		<input type="submit" name="add_blogs" value="ADD A NEW BLOG">
 	</form>
 </body>
