@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resources : C</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/css/thumbnail-slider1.css" rel="stylesheet" />
+    <script src="styles/js/thumbnail-slider1.js" type="text/javascript"></script>
+    <link href="styles/css/thumbnail-slider2.css" rel="stylesheet" />
+    <script src="styles/js/thumbnail-slider2.js" type="text/javascript"></script>
+    <link href="styles/css/thumbnail-slider3.css" rel="stylesheet" />
+    <script src="styles/js/thumbnail-slider3.js" type="text/javascript"></script>
+    <style type="text/css">
+        .thumb-wrap {
+            float: left;
+            display: block;
+            margin: 5px;
+    </style>
+</head>
+<body>
+    <!--start-->
+    <div class="video_tutorials">
+        <center><h1>VIDEO TUTORIALS</h1></center>
+        <div id="thumbnail-slider1">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/1.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/2.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/3.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/4.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/5.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/6.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/7.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/8.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/9.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/10.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/11.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--end-->
+
+    <!--start-->
+    <div class="books">
+        <center><h1>BOOKS</h1></center>
+        <div id="thumbnail-slider2">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/1.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/2.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/3.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/4.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/5.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/6.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/7.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/8.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/9.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/10.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/11.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--end-->
+
+    <!--start-->
+    <div class="blogs & websites">
+        <center><h1>BLOGS & WEBSITES</h1></center>
+        <div id="thumbnail-slider3">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/1.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/2.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/3.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/4.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/5.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/6.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/7.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/8.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/9.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/10.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="img/11.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--end-->
+
+</body>
+</html>
