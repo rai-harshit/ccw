@@ -7,7 +7,7 @@
     <h3>Support Us</h3>
     <p>We are making a collection of best resources for various technical topics.<br>
        You can help us by contributing links/references to resources(books,blogs,videos,etc) for any topic you found useful.</p>
-    <form method="POST" action="">
+    <form method="POST" action="submit_resource.php">
       <table cellpadding="5">
         <tr>
           <td><label>Topic:</label></td>
@@ -18,7 +18,7 @@
           <td>
             <select>
               <option value="" disabled>Select Option</option>
-              <option value="blog">Blog</option>
+              <option value="website">Blog / Website</option>
               <option value="video">Video</option>
               <option value="book">Book</option>
               <option value="other">Other</option>

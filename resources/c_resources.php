@@ -3,12 +3,12 @@
 <head>
     <title>Resources : C</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles/css/thumbnail-slider1.css" rel="stylesheet" />
-    <script src="styles/js/thumbnail-slider1.js" type="text/javascript"></script>
-    <link href="styles/css/thumbnail-slider2.css" rel="stylesheet" />
-    <script src="styles/js/thumbnail-slider2.js" type="text/javascript"></script>
-    <link href="styles/css/thumbnail-slider3.css" rel="stylesheet" />
-    <script src="styles/js/thumbnail-slider3.js" type="text/javascript"></script>
+    <link href="../styles/css/thumbnail-slider1.css" rel="stylesheet" />
+    <script src="../styles/js/thumbnail-slider1.js" type="text/javascript"></script>
+    <link href="../styles/css/thumbnail-slider2.css" rel="stylesheet" />
+    <script src="../styles/js/thumbnail-slider2.js" type="text/javascript"></script>
+    <link href="../styles/css/thumbnail-slider3.css" rel="stylesheet" />
+    <script src="../styles/js/thumbnail-slider3.js" type="text/javascript"></script>
     <style type="text/css">
         .thumb-wrap {
             float: left;
@@ -25,57 +25,62 @@
                 <ul>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/1.jpg">
+                            <img class="thumb" src="./language_files/c/images/1.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/2.jpg">
+                            <img class="thumb" src="./language_files/c/images/2.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/3.jpg">
+                            <img class="thumb" src="./language_files/c/images/3.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/4.jpg">
+                            <img class="thumb" src="./language_files/c/images/4.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/5.jpg">
+                            <img class="thumb" src="./language_files/c/images/5.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/6.jpg">
+                            <img class="thumb" src="./language_files/c/images/6.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/7.jpg">
+                            <img class="thumb" src="./language_files/c/images/7.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/8.jpg">
+                            <img class="thumb" src="./language_files/c/images/8.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/9.jpg">
+                            <img class="thumb" src="./language_files/c/images/9.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/10.jpg">
+                            <img class="thumb" src="./language_files/c/images/10.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/11.jpg">
+                            <img class="thumb" src="./language_files/c/images/11.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="./language_files/c/images/12.jpg">
                         </a>
                     </li>
                 </ul>
@@ -92,57 +97,62 @@
                 <ul>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/1.jpg">
+                            <img class="thumb" src="./language_files/c/images/1.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/2.jpg">
+                            <img class="thumb" src="./language_files/c/images/2.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/3.jpg">
+                            <img class="thumb" src="./language_files/c/images/3.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/4.jpg">
+                            <img class="thumb" src="./language_files/c/images/4.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/5.jpg">
+                            <img class="thumb" src="./language_files/c/images/5.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/6.jpg">
+                            <img class="thumb" src="./language_files/c/images/6.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/7.jpg">
+                            <img class="thumb" src="./language_files/c/images/7.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/8.jpg">
+                            <img class="thumb" src="./language_files/c/images/8.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/9.jpg">
+                            <img class="thumb" src="./language_files/c/images/9.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/10.jpg">
+                            <img class="thumb" src="./language_files/c/images/10.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/11.jpg">
+                            <img class="thumb" src="./language_files/c/images/11.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="./language_files/c/images/12.jpg">
                         </a>
                     </li>
                 </ul>
@@ -159,57 +169,62 @@
                 <ul>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/1.jpg">
+                            <img class="thumb" src="./language_files/c/images/1.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/2.jpg">
+                            <img class="thumb" src="./language_files/c/images/2.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/3.jpg">
+                            <img class="thumb" src="./language_files/c/images/3.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/4.jpg">
+                            <img class="thumb" src="./language_files/c/images/4.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/5.jpg">
+                            <img class="thumb" src="./language_files/c/images/5.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/6.jpg">
+                            <img class="thumb" src="./language_files/c/images/6.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/7.jpg">
+                            <img class="thumb" src="./language_files/c/images/7.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/8.jpg">
+                            <img class="thumb" src="./language_files/c/images/8.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/9.jpg">
+                            <img class="thumb" src="./language_files/c/images/9.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/10.jpg">
+                            <img class="thumb" src="./language_files/c/images/10.jpg">
                         </a>
                     </li>
                     <li>
                         <a href="http://google.com">
-                            <img class="thumb" src="img/11.jpg">
+                            <img class="thumb" src="./language_files/c/images/11.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://google.com">
+                            <img class="thumb" src="./language_files/c/images/12.jpg">
                         </a>
                     </li>
                 </ul>

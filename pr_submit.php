@@ -55,19 +55,19 @@ else
 			$mail->SMTPSecure = 'tls';                  // Enable TLS encryption, `ssl` also accepted
 			$mail->Port = 587;                          // TCP port to connect to
 
-			$mail->setFrom('codersclub.fcrit@gmail.com', 'CC-FCRIT');
-			$mail->addReplyTo('codersclub.fcrit@gmail.com', 'CC-FCRIT');
+			$mail->setFrom($email,$name);
+			$mail->addReplyTo($email,$name);
 			$mail->addAddress('codersclub.fcrit@gmail.com');   // Add a recipient
 			//$mail->addCC('cc@example.com');
 			//$mail->addBCC('bcc@example.com');
 
 			$mail->isHTML(true);  // Set email format to HTML
 
-			$bodyContent = "<h2>Project Request</h2><h4>Name : $name <br> Email : $email <br> Contact : $contact <br> Profession : $profession <br> Organization : $organization <br> Project Type : $project_type <br> Project Description : $project_description</h4>";             //message content using html
+			$bodyContent = "<h2>PROJECT REQUEST</h2><h4>Name : $name <br> Email : $email <br> Contact : $contact <br> Profession : $profession <br> Organization : $organization <br> Project Type : $project_type <br> Project Description : $project_description</h4>";             //message content using html
 
 			//echo($bodyContent);
 
-			$mail->Subject = "PR by $name";
+			$mail->Subject = "ProjReq by $name";
 			$mail->Body    = $bodyContent;
 
 			if(!$mail->send()) {

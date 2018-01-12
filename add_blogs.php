@@ -17,15 +17,15 @@ $name = "Harshit Rai";
 	<div id="add_blog_div">
 		<form id="add_blog" method="POST" action="blog_upload.php">
 			<label>Roll No : </label>
-			<input type='text' required="true" disabled="true" value="<?=$roll_no?>">
+			<input name="roll_no" type='text' required="true" disabled="true" value="<?=$roll_no?>">
 			<br>
 			<label>Author's Name : </label>
-			<input type='text' required='true' disabled="true" value="<?=$name?>">
+			<input name="author" type='text' required='true' disabled="true" value="<?=$name?>">
 			<br>
 			<label>Blog Title :</label>
-			<input type="text" required="true"><br>
+			<input name="title" type="text" required="true"><br>
 			<label>Blog Content</label>
-			<input type="text" required="true"><br>
+			<textarea name="content" type="text" required="true" form="add_blog"></textarea><br>
 			<input type="submit" value="UPLOAD BLOG" name="blog_upload">
 
 		</form>
