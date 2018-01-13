@@ -7,16 +7,17 @@ require './vendor/autoload.php';
 
 if(!isset($_POST['pr_submit']))
 {	
-	echo("Error 404");
-	header( "refresh:3; url=home.php" );
+	$err = 403;
+	header("Location: error.php?err=$err"); 
 }
 else
 {
-	$conn = mysqli_connect('localhost','root','','ccw');
+	require('db_conn.php');
 
 	if(!isset($conn))
 	{
-		echo("Could not connect to the DB. Please try again later.");
+		$err = 500;
+		header("Location: error.php?err=$err"); 
 	}
 	else
 	{
@@ -71,7 +72,8 @@ else
 			$mail->Body    = $bodyContent;
 
 			if(!$mail->send()) {
-			    die("Could not submit the project request. Please try resubmitting the request.");
+			    $err = 500;
+				header("Location: error.php?err=$err"); 
 			    //echo 'Mailer Error: ' . $mail->ErrorInfo;
 			} else {
 			    echo('Project Request Submitted Succesfully');
@@ -79,7 +81,8 @@ else
 		}
 		else
 		{
-			die("Could not submit the project request. Please try resubmitting the request.");
+			$err = 500;
+			header("Location: error.php?err=$err"); 
 		}
 	}
 }

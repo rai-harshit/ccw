@@ -3,25 +3,24 @@
 session_start();
 if(!isset($_SESSION['rn']) && !isset($_SESSION['eid']))
 {
-	echo("Please login or signup to add a new blog");
-	echo("Redirecting you to the home page in 3 seconds...");
-	header('refresh:3;url=home.php');
+	$result = 403;
+  	header("Location: result.php?res=$result"); 
 }
 else
 {
 	if(!isset($_POST['blog_upload']))
 	{
-		echo("Invalid Link. Redirecting you to home page in 3 seconds...");
-		header('refresh:3;url=home.php');
+		$result = 403;
+	  	header("Location: result.php?res=$result"); 
 	}
 	else
 	{
-		$conn = mysqli_connect("localhost" , "root" ,"" , "ccw");
+		require('db_conn.php');
 
 		if(!isset($conn))
 		{
-			echo("Could not connect to database. Redirecting you to home page in 3 seconds...");
-			header('refresh:3;url=home.php');
+			$result = 500;
+		  	header("Location: result.php?res=$result"); 
 		}
 		else
 		{
@@ -40,12 +39,16 @@ else
 
 			if($result)
 			{
-				echo("Blog submitted successfully. Redirecting you to the blogs page in 3 seconds.");
-				header('refresh:3;url=blogs.php');
+				//echo("Blog submitted successfully. Redirecting you to the blogs page in 3 seconds.");
+				//header('refresh:3;url=blogs.php');
+				$result = 200;
+				$com = 'blog submission successful';
+				header("Location: result.php?res=$result&com=$com"); 
 			}
 			else
 			{
-				echo("An error occured while submitting your blog. Please try again later.");
+				$result = 500;
+		  		header("Location: result.php?res=$result"); 
 			}
 		}
 

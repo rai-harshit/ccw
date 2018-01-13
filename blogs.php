@@ -1,32 +1,41 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','','ccw');   
+require('db_conn.php');   
 
 if(!$conn)
 {
-	echo("Could not connect to server. Try again later.");
+	$result = 500;
+	header("Location: result.php?err=$result"); 
 }
 else
 {
 	$sql = "Select * from blogs";
 	$result = mysqli_query($conn,$sql);
-	if(mysqli_num_rows($result)==0)
+	if(!$result)
 	{
-		echo("No Blogs Have been Added Yet.");
+		$result = 500;
+		header("Location: result.php?err=$result"); 
 	}
 	else
 	{
-		while($data = mysqli_fetch_array($result))
+		if(mysqli_num_rows($result)==0)
 		{
-			$title = $data['blog_title'];
-			$author = $data['blog_author'];
-			$timestamp = $data['blog_timestamp'];
-			$content = $data['blog_content'];
-			echo("<br><br>");
-			print("$title<br>");
-			print("Written by : $author");
-			print("\ton $timestamp <br>");
-			print("$content");
+			echo("No Blogs Have been Added Yet.");
+		}
+		else
+		{
+			while($data = mysqli_fetch_array($result))
+			{
+				$title = $data['blog_title'];
+				$author = $data['blog_author'];
+				$timestamp = $data['blog_timestamp'];
+				$content = $data['blog_content'];
+				print("$title<br>");
+				print("Written by : $author");
+				print("\ton $timestamp <br>");
+				print("$content");
+				print("<br><br>");
+			}
 		}
 	}
 }

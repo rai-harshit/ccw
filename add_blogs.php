@@ -3,23 +3,14 @@
 session_start();
 if(!isset($_SESSION['rn']) && !isset($_SESSION['eid']))
 {
-	echo("Please login or signup to add a new blog");
-	echo("Redirecting you to the home page in 3 seconds...");
-	header('refresh:3;url=home.php');
+	$result = 403;
+  	header("Location: result.php?res=$result");
 }
 else
 {
-	require('db_conn.php');
-
+	//print_r($_SESSION);
 	$roll_no = $_SESSION['rn'];
-	$sql = "select first_name, last_name from profiles where roll_no = '$roll_no'";
-	//echo($sql);
-
-	$result = mysqli_query($conn,$sql);
-	$row = mysqli_fetch_array($result);
-	//print_r($row);
-	$name = $row['first_name'].' '.$row['last_name'];
-	$_SESSION['name'] = $name;
+	$name = $_SESSION['uname'];
 	//echo($name);
 }
 

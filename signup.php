@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+
+if(isset($_SESSION['rn']) && isset($_SESSION['eid']))
+{
+    header("Location: home.php"); 
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

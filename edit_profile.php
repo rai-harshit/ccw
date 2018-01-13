@@ -3,32 +3,46 @@
 session_start();
 if(!isset($_SESSION['rn']) && !isset($_SESSION['eid']))
 {
-  echo("Please Login to edit your profile.");
-  echo("<a href='home.php'>LOGIN</a>");
-  header("refresh:3; url=home.php");
+  $result = 403;
+  header("Location: result.php?res=$result");  
 }
 else
 {
   include('db_conn.php');
   
-  $roll_no = $_SESSION['rn'];
-  $email = $_SESSION['eid'];
+  if(!$conn)
+  {
+    $result = 500;
+    header("Location: result.php?res=$result"); 
+  }
+  else
+  {
+    $roll_no = $_SESSION['rn'];
+    $email = $_SESSION['eid'];
 
-  $sql="SELECT  *  FROM  profiles  where  roll_no=$roll_no";
-  $result=mysqli_query($conn,$sql);
-  $row=mysqli_fetch_array($result);
-  $first_name = $row['first_name'];
-  //echo("$first_name");
-  $last_name = $row['last_name'];
-  $name = $first_name.' '.$last_name;
-  $gender = $row['gender'];
-  $contact = $row['contact'];
-  $dob = $row['dob'];
-  $hobbies = $row['hobbies'];
-  $languages = $row['languages_known'];
-  $previous_works = $row['previous_works'];
-  $github = $row['github'];
-  $linkedin = $row['linkedin'];
+    $sql="SELECT gender,profession,contact,dob,hobbies,languages_known,previous_works,github,linkedin FROM  profiles  where  roll_no='$roll_no'";
+      //echo($sql);
+    $result=mysqli_query($conn,$sql);
+    if(!$result)
+    {
+      $result = 500;
+      header("Location: result.php?res=$result"); 
+    }
+    else
+    {
+      $row=mysqli_fetch_array($result);
+      $name = $_SESSION['uname'];
+      $gender = $row['gender'];
+      $contact = $row['contact'];
+      $dob = $row['dob'];
+      $profession = $row['profession'];
+      $hobbies = $row['hobbies'];
+      $languages = $row['languages_known'];
+      $previous_works = $row['previous_works'];
+      $github = $row['github'];
+      $linkedin = $row['linkedin'];
+    }
+  }
 }
 
 ?>
@@ -65,12 +79,15 @@ else
 
     <label  for="email">Gender</label>
     <input type="text" id="gender" name="gender" value='<?=$gender?>' disabled="true"><br>  
-    
-    <label  for="contact-no">Contact No.</label>
-    <input type="text" id="contact_no" placeholder="Enter Mobile No." name="contact_no" value='<?=$contact?>'><br>
 
     <label class="control-label lead" for="contact-no">Date Of Birth</label>
     <input type="date" id="dob" placeholder="DD-MM-YY" name="dob" value='<?=$dob?>'><br>
+
+    <label  for="email">Profession</label>
+    <input type="text" id="profession" name="profession" value='<?=$profession?>'><br> 
+    
+    <label  for="contact-no">Contact No.</label>
+    <input type="text" id="contact_no" placeholder="Enter Mobile No." name="contact_no" value='<?=$contact?>'><br>
   
     <label  for="languages">Languages Know</label>
     <textarea name="languages" id="languages"  cols="30" rows="1" placeholder="Enter know language"  value='<?=$languages?>'>

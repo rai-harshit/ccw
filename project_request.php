@@ -1,3 +1,50 @@
+<?php
+
+session_start();
+
+if(isset($_SESSION['rn']) && isset($_SESSION['eid']))
+{	
+	require('db_conn.php');
+	if(!$conn)
+	{
+		$err = 500;
+    	header("Location: error.php?err=$err"); 
+	}
+	else
+	{
+		$roll_no = $_SESSION['rn'];
+		$name = $_SESSION['uname'];
+		$email = $_SESSION['eid'];
+		$sql = "select contact, profession from profiles where roll_no = '$roll_no'";
+		//echo($sql);
+		$result = mysqli_query($conn,$sql);
+
+		if(!$result)
+		{
+			$err = 500;
+    		header("Location: error.php?err=$err"); 
+		}
+		else
+		{
+			$row = mysqli_fetch_array($result);
+			$contact = $row['contact'];
+			$profession = $row['profession'];
+			//print_r($row);
+		}
+		
+	}
+}
+else
+{
+	$name = "";
+	$email = "";
+	$contact = "";
+	$profession = "";
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,16 +70,16 @@
 		<div>
 			<form id="project_request_form" method="POST" action="pr_submit.php">
 				<label>Name </label>
-				<input type="text" name="name" required="true" placeholder="Enter your Name here">
+				<input type="text" name="name" required="true" placeholder="Enter your Name here" value="<?=$name?>">
 				<br>
 				<label>Email </label>
-				<input type="email" name="email" placeholder="Enter your Email here">
+				<input type="email" name="email" placeholder="Enter your Email here" value="<?=$email?>">
 				<br>
 				<label>Contact </label>
-				<input type="text" name="contact" required="true" placeholder="Enter your Contact here">
+				<input type="text" name="contact" required="true" placeholder="Enter your Contact here" value="<?=$contact?>">
 				<br>
 				<label>Profession </label>
-				<input type="text" name="profession" required="true" placeholder="Enter your Profession here">
+				<input type="text" name="profession" required="true" placeholder="Enter your Profession here" value="<?=$profession?>">
 				<br>
 				<label>Organization / Company / Institute </label>
 				<input type="text" name="organization" required="true" placeholder="Enter your Organization name here">

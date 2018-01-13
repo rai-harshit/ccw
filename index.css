@@ -1,0 +1,244 @@
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+a.navbar-brand {
+    color: rgb(39, 60, 74);
+    font-weight: 800;
+    font-size: 2em;
+    font-family: courier new, fantasy;
+}
+
+ul.navbar-nav mr-auto {
+    background-color: rgb(241, 241, 241);
+    padding: 8px 15px;
+    height: 60px;
+    font-size: 1.5em;
+}
+
+a.nav-link {
+    color: #212737;
+}
+
+a.nav-link:hover {
+    color: #0cbbfc;
+    vertical-align: baseline;
+}
+
+/********************************
+********* SLIDER ****************
+********************************
+
+.overlay {
+    bottom: 0;
+    right: 0;
+    height: 94%;
+    width: 100%;
+    opacity: 0.2;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    text-align: center;
+}
+
+.slider-data {
+    color: white;
+    opacity: 0.8;
+    z-index: 200;
+
+}
+
+/**********************************
+**** SIGN IN AND SUBMIT PROJECT ***
+**********************************/
+
+label {
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 1em;
+}
+
+input [type="text"],
+input [type="password"] {
+    display: block;
+}
+
+fieldset {
+    width: 30em;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+
+legend {
+    font-weight: 800;
+    color: white;
+    font-stretch: expanded;
+}
+
+#signin-submit-section {
+    background: none repeat scroll 0 0 #212737;
+    color: #b3b3b3;
+    /*margin: 2em auto;*/
+    padding: 4em;
+}
+
+#sign-in {
+    float: left;
+}
+
+.input {
+    padding: 0.6em 0.4em;
+}
+
+input [type="text"],
+input [type="password"] {
+    padding: 5px;
+}
+
+
+/****************************
+******* SUBMIT PROJECT *****
+***************************/
+
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 50%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1.5em 6em;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#submit-project {
+    float: right;
+    height: 21em;
+    width: 50%;
+    background: url(ps_image_7.jpg) 30% 20% no-repeat;
+}
+
+
+/*#sub-idea {
+    margin-top: 10%;
+    margin-left: 35%;
+    padding: 1em 4em;
+    background-color: ghostwhite;
+}
+
+#sub-idea:hover {
+    background-color: #FFAB1B;
+}*/
+
+/***********************************
+************* SPRITES **************
+***********************************/
+
+#footer {
+    background-color: rgb(33, 39, 55);
+    color: rgb(189, 190, 195);
+}
+
+#footer-list li {
+    list-style-type: none;
+    line-height: 3em;
+}
+
+
+.clearfix :after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+#footer-list {
+    float: left;
+    margin: 3em 3em;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+#location {
+    float: right;
+    margin: 3em;
+}
+
+.social-sprites {
+    width: 27px;
+    height: 26px;
+    display: inline-block;
+
+}
+
+#twitter {
+    background: url(social4.png) -255px -95px no-repeat;
+}
+
+#facebook {
+    background: url(social4.png) -115px -3px no-repeat;
+}
+
+#google {
+    background: url(social4.png) -171px -66px no-repeat;
+}
+
+#linkedin {
+    background: url(social4.png) -256px -66px no-repeat;
+}
+
+#social-networks {
+    text-align: center;
+    background-color: rgb(29, 35, 51);
+    padding-top: 2em;
+
+}
+
+#make {
+    text-align: center;
+    background-color: rgb(29, 35, 51);
+    padding-bottom: 2em;
+}
