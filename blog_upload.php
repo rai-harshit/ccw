@@ -26,7 +26,7 @@ else
 		{
 			//print_r($_POST);
 			$roll_no = $_SESSION['rn'];
-			$author = $_SESSION['name'];
+			$author = $_SESSION['uname'];
 			$title = $_POST['title'];
 			$content = $_POST['content'];
 			//print_r($_POST);

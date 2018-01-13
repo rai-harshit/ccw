@@ -55,7 +55,7 @@ else
 	<div class="float">
 		<div class="page_heading">
 			<h1>
-				Contact Us
+				Project Request
 			</h1> 
 		</div>
 		<div id="message_for_clients">

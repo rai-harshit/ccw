@@ -2,10 +2,6 @@ body {
     background-color: rgb(241, 241, 241);
 }
 
-.float {
-    width:100% !important;
-}
-
 .starter-template {
     padding: 3rem 1.5rem;
     text-align: center;
@@ -26,11 +22,11 @@ ul.navbar-nav mr-auto {
 }
 
 a.nav-link {
-    color: #212737;
+    color: #212737 !important;
 }
 
 a.nav-link:hover {
-    color: #0cbbfc;
+    color: #0cbbfc !important;
     vertical-align: baseline;
 }
 
@@ -93,10 +89,10 @@ legend {
 }
 
 #signin-submit-section {
-    background: none repeat scroll 0 0 #212737;
+    background:  #212737;
     color: #b3b3b3;
     /*margin: 2em auto;*/
-    padding: 4em;
+    /*padding: 4em;*/
 }
 
 #sign-in {
@@ -111,8 +107,6 @@ input [type="text"],
 input [type="password"] {
     padding: 5px;
 }
-
-
 
 
 /****************************
@@ -196,9 +190,9 @@ input [type="password"] {
 
 
 .clearfix :after {
-    clear: both;
-    content: '';
-    display: block;
+    /*clear: both;*/
+    /*content: '';*/
+    /*display: block;*/
 }
 
 #footer-list {

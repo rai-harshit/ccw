@@ -11,7 +11,7 @@
     <title>Home</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="styles/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
     <!--------------- CUSTOM CSS -------------->
     <link href="index.css" rel="stylesheet" type="text/css">
@@ -19,17 +19,68 @@
 
     <!------------ NORMALIZE CSS -------------->
     <link href="normalize.css" rel="stylesheet" type="text/css">
-
     <style type="text/css">
-        #login_form{
-            padding:0px;
+        input{
+            width:100%;
+        }
+        .signin_submit{
+            clear:both;
+        }
+        .login{
+            padding-right: 0%;
+            padding-left: 10%;
+            padding-top: 3%;
+            padding-bottom:0%;
+            position: relative;
+        }
+        .ideas{
+            background: #212737;
+            margin:5%;
+            position: relative;
+            color:#b3b3b3;
+            background: url(ps_image_7.jpg) 30% 20% no-repeat;
+            height:80%;
+        }
+        #gotideas{
+            color: white;
+            padding-top:10%;
+            font-weight: 800;
+            font-family:courier new,cursive;
+            font-size: 30px;
+            text-align: center;
+        }
+        #fancy_submit{
+            margin-left:15%;
+            /*margin-bottom: 5%;*/
+        }
+        .button{
+            width:70%;
+        }
+        #twitter_widget{
+            padding:5px;
+            width: 100%;
+            margin-top: 1%;
+        }
+        #footer{
+            height:100%;
+        }
+        h3{
+            text-align: center;
+            padding-top:5%;
+        }
+        #others{
+            padding-left: 5%;
+        }
+        #social-networks{
+            margin-top: 1%;
         }
     </style>
 </head>
 
 
 <body>
-    <div class='float' style="width:100% !important;padding:0px !important;">
+    <div class="home">
+
         <nav class="navbar navbar-expand-md bg-light navbar-light">
           <a class="navbar-brand" href="index.php">Coders' Club</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="box-shadow: 0px 3px 5px">
@@ -57,10 +108,12 @@
         </nav>
 
 
-        <!--------SLIDER------------>
-        <!----------APPLY OVERLAY HERE PLEASE---------->
-        <div class="float" style="width: 100% !important">
-                <img class="mySlides" src="image_code1.jpg" style="width:100%;height: 100%;position: relative;list-style-type: none">
+        <!--------SLIDER----------->
+        <!-------------------------
+        ---------APPLY OVERLAY HERE PLEASE---------->
+        <div class="slider">
+            <div style="width:100%;margin-right: 0px;padding-right: 0px">
+                <img class="mySlides" src="image_code1.jpg" style="width: 100%;height: 100%;position: relative;list-style-type: none">
                 <div class="overlay">
                     <!--p class="slider-data">Lorem Ipsum</p-->
                 </div>
@@ -72,6 +125,7 @@
                 <div class="overlay">
                     <!--p class="slider-data">Lorem Ipsum</p-->
                 </div>
+            </div>
         </div>
 
 
@@ -97,44 +151,78 @@
 
 
         <!--SIGN IN-->
-        <div class="row">
-            <div class="col-md-6" id='login_form'>
-                <form style="width:100%">
-                            <legend>Login</legend>
-                            <label for="username">Username</label>
-                            <input class="input" type="text" id="username" size="35">
-                            <label for="password">Password</label>
-                            <input class="input" type="password" id="password" size="35">
-                            <input type="submit" name="Submit" style="background: none repeat scroll 0 0 #0cbbfc;border:1px solid #0cbbfc;border-radius:5px;color: white;font-weight: 400;padding: 0.8em 0.9em;display: block;margin:0.8em 0em;">
-                            <p id="sign-up"><a href="#">Create an account? Sign up here</a></p>
-                </form>
+        <div class="signin_submit">
+        <div class="row" style="background:#212737 !important;">
+            <!-- <div class="col-md-6" style="background:  #212737;color: #b3b3b3;"> -->
+            <div class="col-md-6" style="background: #212737;color: #b3b3b3;">
+                <div class="login">
+                    <form name=login_form style="padding-right:12%; border-right:1px solid white">
+                        <legend>Login</legend>
+                        <label for="username">Username</label>
+                        <input class="input" type="text" id="username" size="35">
+                        <label for="password">Password</label>
+                        <input class="input" type="password" id="password" size="35">
+                        <input type="submit" name="Submit" value="Login" style="background: none repeat scroll 0 0 #0cbbfc;border:1px solid #0cbbfc;border-radius:5px;color: white;font-weight: 400;padding: 0.8em 0.9em;display: block;margin:0.8em 0em;">
+                        <p id="sign-up"><a href="#">Create an account? Sign up here</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6" style="margin-top: 10%;clear:both">
+                <div class="ideas">
+                    <p id="gotideas">Got any cool ideas?</p>
+                    <!-- <small style="color: white;margin-left: 15%;font-size: 14px">Submit us your project ideas and we will turn them into reality. --></small>
+                    <div>
+                        <button class="button" id='fancy_submit'><span>Submit Idea</span></button>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+
+
+
+
+
 
 
 
         <!-------TWITTTTTEEEEEEEEEEERRRRRRRRRR------------>
-        <div id="twitter-post">
-            <img src="twitter_logo.png" width="15%" height="5%">
-            <div id="tweet-">
-                <h2>Coming soon...</h2>
+        <div id="twitter_widget">
+            <div style="width:auto;margin-left: 40%">
+                <img src="twitter_logo.png" width="150px" height="75px">
+                <div id="tweet">
+                    <h4><b>Coming soon...</b></h4>
+                </div>
             </div>
         </div>
 
         <!-----------FOOTER------------>
         <div id="footer">
-            <div class="clearfix">
-                <div id="footer-list">
+            <div class="row">
+                <div class="col-md-6" id="other_links">
                     <h3>Other links</h3>
-                    <li><a href="#" style="text-decoration: none;color: white">Donate</a></li>
-                    <li><a href="#" style="text-decoration: none;color: white">Report a bug</a></li>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li id="others"><a href="#" style="text-decoration: none;color: white">Donate</a></li>
+                                <li id="others"><a href="#" style="text-decoration: none;color: white">Leaderboard</a></li>
+                            </ul>
+                        </div>
+                        <div class='col-md-6'>
+                            <ul>
+                                <li id="others"><a href="#" style="text-decoration: none;color: white">Report a Bug</a>
+                                <li id="others"><a href="#" style="text-decoration: none;color: white">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div id="location">
+                <div class="col-md-6" id="find_us" >
                     <h3>Find us at</h3>
-                    <iframe width="600" height="450" frameborder="0" style="border:0;height: 22em;width: 37em" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq8XY4MrG5zsR2KIsZh1I9Ls&key=AIzaSyCS9ABZV-9Z6I4IqbZ0NGnKapD60xjMmiE" allowfullscreen></iframe>
+                     <iframe width="600" height="400" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq8XY4MrG5zsR2KIsZh1I9Ls&key=AIzaSyCS9ABZV-9Z6I4IqbZ0NGnKapD60xjMmiE" allowfullscreen></iframe> 
                 </div>
             </div>
-            <div id="social-networks">
+            <div class='col-md-12' id="social-networks">
                 <a href="https://twitter.com/FCRITcodersclub" style="text-decoration: none">
                     <div id="twitter" class="social-sprites"></div>
                 </a>
@@ -148,22 +236,21 @@
                     <div id="linkedin" class="social-sprites"></div>
                 </a>
             </div>
-            <div id="make">
-                <small>&lt;Made by Coder's club&copy;, FCRIT/&gt;</small></i>
+            <div class="col-md-12" id="make">
+                <small>&lt;Made by Coders' Club&copy;,FCRIT/&gt;</small></i>
             </div>
-        </div>
+           </div> 
+        <!-- /.container
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js " integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4 " crossorigin="anonymous "></script>
+
     </div>
-    <!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js " integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4 " crossorigin="anonymous "></script>
-
-
 </body>
 
 </html>
