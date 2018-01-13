@@ -2,6 +2,10 @@ body {
     background-color: rgb(241, 241, 241);
 }
 
+.float {
+    width:100% !important;
+}
+
 .starter-template {
     padding: 3rem 1.5rem;
     text-align: center;
@@ -107,6 +111,8 @@ input [type="text"],
 input [type="password"] {
     padding: 5px;
 }
+
+
 
 
 /****************************
