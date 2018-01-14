@@ -4,7 +4,7 @@ session_start();
 
 if(isset($_SESSION['rn']) && isset($_SESSION['eid']))
 {
-    header("Location: home.php"); 
+    header("Location: index.php"); 
 }
 
 ?>

@@ -49,7 +49,7 @@
 							$_SESSION['eid'] = $result['email'];
 							//print_r($_SESSION);
 							//echo($_SESSION['email']);
-							header( "refresh:0 ;url=profile.php" ); 
+							header( "refresh:0 ;url=index.php" ); 
 						}
 						else
 						{
@@ -75,7 +75,7 @@
 			}
 			else
 			{
-				// echo("The Email-ID is not associated with any account. Please try again.");
+				//echo("The Email-ID is not associated with any account. Please try again.");
 				$result = -69;
 				header("Location: result.php?res=$result");
 			}

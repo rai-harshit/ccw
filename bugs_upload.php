@@ -4,7 +4,11 @@ session_start();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require './vendor/autoload.php';
+// For local hosting
+require('db_conn.php');
+
+// For live hosting
+//require(' /storage/ssd2/792/4272792/public_html/db_conn.php'); 
 
 if(!isset($_POST['bugs_upload']))
 {

@@ -34,7 +34,7 @@
 	else{
 
 		echo "Some thing went wrong redirecting you to home in 3 seconds";
-		//header('refresh:3 url=home.php');
+		//header('refresh:3 url=index.php');
 	}
 
 

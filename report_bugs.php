@@ -40,7 +40,7 @@ else
         </tr>
         <tr>
           <td><label for="files">Add Screenshot :</label></td>
-          <td><input id="bug_ss" type="file" name="bug_ss"></td>
+          <td><input id="bug_ss" type="file" name="bug_ss" accept="image/*"></td>
         </tr>
         <tr colspan="2">
           <td><input type="submit" value="SUBMIT REPORT" name="bugs_upload"></td>

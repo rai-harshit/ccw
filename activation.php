@@ -7,7 +7,11 @@ if(!isset($_GET['rn']) || !isset($_GET['aid']) || !isset($_GET['task']))
 }
 else
 {
+	// For local hosting
 	require('db_conn.php');
+
+	// For live hosting
+	//require(' /storage/ssd2/792/4272792/public_html/db_conn.php');
 
 	if(!$conn)
 	{
@@ -68,7 +72,7 @@ else
 					// echo("Your account has been verified and activated successfully.");
 					// echo("<br><br>");
 					// echo("Redirecting you to the Login Page in 5 seconds...");
-					// header( "refresh:5; url=home.php" ); 
+					// header( "refresh:5; url=index.php" ); 
 					$result = 200;
 					$com = "account verified and activated";
 					header("Location: result.php?res=$result&comment=$com"); 
@@ -91,7 +95,7 @@ else
 				// echo("<b>ACCOUNT ALREADY ACTIVATED !</b>");
 				// echo("<br><br>");
 				// echo("<b>Redirecting you to the Login Page in 3 seconds...</b>");
-				// header('refresh:3;url=home.php');
+				// header('refresh:3;url=index.php');
 				$result=99;
 				header("Location: result.php?res=$result"); 
 			}

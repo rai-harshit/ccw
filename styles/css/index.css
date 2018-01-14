@@ -215,19 +215,19 @@ input [type="password"] {
 }
 
 #twitter {
-    background: url(social4.png) -255px -95px no-repeat;
+    background: url(../../images/social.png) -255px -95px no-repeat;
 }
 
 #facebook {
-    background: url(social4.png) -115px -3px no-repeat;
+    background: url(../../images/social.png) -115px -3px no-repeat;
 }
 
 #google {
-    background: url(social4.png) -171px -66px no-repeat;
+    background: url(../../images/social.png) -171px -66px no-repeat;
 }
 
 #linkedin {
-    background: url(social4.png) -256px -66px no-repeat;
+    background: url(../../images/social.png) -256px -66px no-repeat;
 }
 
 #social-networks {
