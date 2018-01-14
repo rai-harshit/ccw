@@ -4,6 +4,9 @@ session_start();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+require './vendor/autoload.php';
+
+//print_r($_POST);
 // For local hosting
 require('db_conn.php');
 

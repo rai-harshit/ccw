@@ -16,7 +16,6 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap.css">
-<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> -->
 
     <!--------------- CUSTOM CSS -------------->
     <link href="styles/css/index.css" rel="stylesheet" type="text/css">
@@ -74,9 +73,10 @@
             width:70%;
         }
         #twitter_widget{
-            padding:5px;
             width: 100%;
-            margin-top: 1%;
+            padding:0px;
+            margin:0px;
+        }
         }
         #footer{
             height:100%;
@@ -94,6 +94,12 @@
         #logout{
             right:0;
         }
+        #find_us{
+            padding-left:40px;
+        }
+        .other_links{
+            padding-bottom: 3px;
+        }
     </style>
 </head>
 
@@ -101,7 +107,7 @@
 <body>
     <div class="home">
 
-        <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light">
           <a class="navbar-brand" href="index.php">Coders' Club</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="box-shadow: 0px 3px 5px">
             <span class="navbar-toggler-icon"></span>
@@ -118,7 +124,7 @@
                 <a class="nav-link" href="blogs.php">Blogs</a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="resources.php">Resources</a>
+                <a class="nav-link" href="find_resources.php">Resources</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about_us.php">About Us</a>
@@ -129,7 +135,6 @@
                 {
                     print("<ul class='navbar-nav'>
                                 <li class='nav-item'>
-                                    <span class='glyphicon glyphicon-user'></span>
                                     <a class='nav-link' href='profile.php'>Profile</a>
                                 </li>
                                 <li class='nav-item'>
@@ -146,16 +151,16 @@
         <!-------------------------
         ---------APPLY OVERLAY HERE PLEASE---------->
         <div class="slider">
-            <div style="width:100%;margin-right: 0px;padding-right: 0px">
-                <img class="mySlides" src="images/slider1.jpg" style="width: 100%;height: 100%;position: relative;list-style-type: none">
+            <div style="width:100%;margin-right: 0px;padding-right: 0px;">
+                <img class="mySlides" src="images/slider1.jpg" style="width: 100%;height:75% !important;position: relative;list-style-type: none">
                 <div class="overlay">
                     <!--p class="slider-data">Lorem Ipsum</p-->
                 </div>
-                <img class="mySlides" src="images/slider2.jpg" style="width: 100%;height: 100%;position: relative;list-style-type: none">
+                <img class="mySlides" src="images/slider2.jpg" style="width: 100%;height: 75% !important;position: relative;list-style-type: none">
                 <div class="overlay">
                     <!--p class="slider-data">Lorem Ipsum</p-->
                 </div>
-                <img class="mySlides" src="images/slider3.jpg" style="width: 100%;height: 100%;position: relative;list-style-type: none">
+                <img class="mySlides" src="images/slider3.jpg" style="width: 100%;height: 75% !important;position: relative;list-style-type: none">
                 <div class="overlay">
                     <!--p class="slider-data">Lorem Ipsum</p-->
                 </div>
@@ -178,7 +183,7 @@
                     myIndex = 1
                 }
                 x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 3500); // Change image every 2 seconds
+                setTimeout(carousel, 4000); // Change image every 2 seconds
             }
 
         </script>
@@ -219,12 +224,12 @@
                     <p id="gotideas">Got any cool ideas?</p>
                     <!-- <small style="color: white;margin-left: 15%;font-size: 14px">Submit us your project ideas and we will turn them into reality. --></small>
                     <div>
-                        <button class="button" id='fancy_submit'><span>Submit Idea</span></button>
+                        <a href="project_request.php"><button class="button" id='fancy_submit'><span>Submit Idea</span></button></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    
 
 
 
@@ -235,38 +240,50 @@
 
 
         <!-------TWITTTTTEEEEEEEEEEERRRRRRRRRR------------>
-        <div id="twitter_widget">
+<!--         <div id="twitter_widget">
             <div style="width:auto;margin-left: 40%">
                 <img src="images/twitter_logo.png" width="150px" height="75px">
                 <div id="tweet">
                     <h4><b>Coming soon...</b></h4>
                 </div>
             </div>
+        </div> -->
+
+        <div id="twitter_widget" class="col-md-12" >
+            <div class="row">
+                <div class="col-md-6">
+                        <a style="font-size: 10px" class="twitter-timeline" data-lang="en" data-width="100%" data-height="500" href="https://twitter.com/FCRITcodersclub" data-chrome="nofooter noborders transparent noscrollbar"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="col-md-6">
+                        <h3>Something interesting coming here too...</h3>
+                </div>
+            </div>
         </div>
+    </div>
 
         <!-----------FOOTER------------>
         <div id="footer">
             <div class="row">
                 <div class="col-md-6" id="other_links">
-                    <h3 style="margin-bottom: 5%">Other links</h3>
+                    <h3 style="margin-bottom: 5%">Other Links</h3>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <ul id="others">
-                                <li><a href="#" style="text-decoration: none;color: white">Donate</a></li>
-                                <li><a href="#" style="text-decoration: none;color: white">Leaderboard</a></li>
+                                <li class="other_links"><a href="support_us" style="text-decoration: none;color: white">Support Us</a></li>
+                                <li class="other_links"><a href="#" style="text-decoration: none;color: white">Leaderboard</a></li>
                             </ul>
                         </div>
                         <div class='col-md-6'>
                             <ul id="others">
-                                <li><a href="#" style="text-decoration: none;color: white">Report a Bug</a>
-                                <li><a href="#" style="text-decoration: none;color: white">FAQs</a></li>
+                                <li class="other_links"><a href="report_bugs" style="text-decoration: none;color: white">Report a Bug</a>
+                                <li class="other_links"><a href="#" style="text-decoration: none;color: white">FAQs</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6" id="find_us" >
                     <h3>Find us at</h3>
-                     <iframe width="600" height="400" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq8XY4MrG5zsR2KIsZh1I9Ls&key=AIzaSyCS9ABZV-9Z6I4IqbZ0NGnKapD60xjMmiE" allowfullscreen></iframe> 
+                     <iframe width="95%" height="400" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq8XY4MrG5zsR2KIsZh1I9Ls&key=AIzaSyCS9ABZV-9Z6I4IqbZ0NGnKapD60xjMmiE" allowfullscreen></iframe> 
                 </div>
             </div>
             <div class='col-md-12' id="social-networks">
@@ -284,8 +301,9 @@
                 </a>
             </div>
             <div class="col-md-12" id="make">
-                <small>&lt;Made by Coders' Club&copy;,FCRIT/&gt;</small></i>
-            </div>
+                <small><b>&lt;Made by Coders' Club&copy;,FCRIT/&gt;</b></small></i>
+                <br>
+                <small><b>&lt;Dedicated to PyRita/&gt;</b></small>
            </div> 
         <!-- /.container
 

@@ -3,41 +3,50 @@
 session_start();
 if(!isset($_SESSION['rn']) && !isset($_SESSION['eid']))
 {
-  $err = 403;
-  header("Location: error.php?err=$err"); 
+  $result = 403;
+  header("Location: result.php?res=$result"); 
 }
 else
 {
-  include('db_conn.php');
+  require('db_conn.php');
   
-  $roll_no = $_SESSION['rn'];
-  $email = $_SESSION['eid'];
-
-  $sql="SELECT  *  FROM  profiles  where  roll_no=$roll_no";
-  $result=mysqli_query($conn,$sql);
-  $row=mysqli_fetch_array($result);
-  $first_name = $row['first_name'];
-  //echo("$first_name");
-  $last_name = $row['last_name'];
-  $name = $first_name.' '.$last_name;
-  $gender = $row['gender'];
-  $contact = $row['contact'];
-  $profession = $row['profession'];
-  if($row['dob'] == '0000-00-00')
+  if(!$conn)
   {
-    $dob = NULL;
+      $result = 500;
+      header("Location: result.php?res=$result"); 
   }
   else
   {
-    $dob = $row['dob'];
+    $roll_no = $_SESSION['rn'];
+    $email = $_SESSION['eid'];
+
+    $sql="SELECT  *  FROM  profiles  where  roll_no=$roll_no";
+    $result=mysqli_query($conn,$sql);
+    $row=mysqli_fetch_array($result);
+    $first_name = $row['first_name'];
+    //echo("$first_name");
+    $last_name = $row['last_name'];
+    $name = $first_name.' '.$last_name;
+    $gender = $row['gender'];
+    $contact = $row['contact'];
+    $profession = $row['profession'];
+    if($row['dob'] == '0000-00-00')
+    {
+      $dob = NULL;
+    }
+    else
+    {
+      $dob = $row['dob'];
+    }
+    $hobbies = $row['hobbies'];
+    $languages = $row['languages_known'];
+    $previous_works = $row['previous_works'];
+    $github = $row['github'];
+    $linkedin = $row['linkedin'];
+    $profile_pic = $row['profile_pic'];
+    // header("Content-type: image/jpg");
   }
-  $hobbies = $row['hobbies'];
-  $languages = $row['languages_known'];
-  $previous_works = $row['previous_works'];
-  $github = $row['github'];
-  $linkedin = $row['linkedin'];
-  $profile_pic = $row['profile_pic'];
-  // header("Content-type: image/jpg");
+
  
 }
 

@@ -23,7 +23,7 @@
 	<div id="c">
 		<h3>C</h3>
 		<div id="c_link">
-			<a href="./resources/c_resources.php">
+			<a href="./resource_files/c_resources.php">
 				<img src="images/c.jpg">
 			</a>
 		</div>
@@ -31,7 +31,7 @@
 	<div id="java">
 		<h3>Java</h3>
 		<div id="java_link">
-			<a href="./resources/java_resources.php">
+			<a href="./resource_files/java_resources.php">
 				<img src="images/java.jpg">
 			</a>
 		</div>
@@ -39,7 +39,7 @@
 	<div id="html">
 		<h3>HTML</h3>
 		<div id="html_link">
-			<a href="./resources/html_resources.php">
+			<a href="./resource_files/html_resources.php">
 				<img src="images/html.jpg">
 			</a>
 		</div>
@@ -47,7 +47,7 @@
 	<div id="css">
 		<h3>CSS</h3>
 		<div id="css_link">
-			<a href="./resources/css_resources.php">
+			<a href="./resource_files/css_resources.php">
 				<img src="images/css.jpg">
 			</a>
 		</div>
@@ -55,7 +55,7 @@
 	<div id="php">
 		<h3>PHP</h3>
 		<div id="php_link">
-			<a href="./resources/php_resources.php">
+			<a href="./resource_files/php_resources.php">
 				<img src="images/php.jpg">
 			</a>
 		</div>
@@ -63,7 +63,7 @@
 	<div id="javascript">
 		<h3>JavaScript</h3>
 		<div id="javascript_link">
-			<a href="./resources/javascript_resources.php">
+			<a href="./resource_files/javascript_resources.php">
 				<img src="images/javascript.png">
 			</a>
 		</div>
@@ -71,7 +71,7 @@
 	<div id="python">
 		<h3>Python</h3>
 		<div id="python_link">
-			<a href="./resources/python_resources.php">
+			<a href="./resource_files/python_resources.php">
 				<img src="images/python.png">
 			</a>
 		</div>
@@ -79,7 +79,7 @@
 	<div id="c++">
 		<h3>C++</h3>
 		<div id="c++_link">
-			<a href="./resources/c++_resources.php">
+			<a href="./resource_files/c++_resources.php">
 				<img src="images/c++.jpg">
 			</a>
 		</div>

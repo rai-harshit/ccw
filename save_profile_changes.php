@@ -7,8 +7,8 @@ session_start();
 if(!isset($_SESSION['rn']) && !isset($_SESSION['eid']))
 {
 
-	$err = 403;
-  	header("Location: error.php?err=$err");
+	$result = 403;
+  	header("Location: result.php?res=$result");
 }
 else
 {	
@@ -98,8 +98,8 @@ else
 	        if($insert){
 	            echo "Profile photo uploaded successfully.";
 	        }else{
-	            $err = 500;
-  				header("Location: error.php?err=$err");
+	            $result = 500;
+  				header("Location: result.php?res=$result");
 	        } 
 		}
 
@@ -111,14 +111,14 @@ else
 		}
 		else
 		{
-			$err = 500;
-  			header("Location: error.php?err=$err");
+			$result = 500;
+  			header("Location: result.php?res=$result");
 		}
 	}
 	else
 	{
-		$err = 403;
-  		header("Location: error.php?err=$err");
+		$result = 403;
+  		header("Location: result.php?res=$result");
 	}
 }
 

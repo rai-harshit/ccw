@@ -7,8 +7,8 @@ require './vendor/autoload.php';
 
 if(!isset($_POST['pr_submit']))
 {	
-	$err = 403;
-	header("Location: error.php?err=$err"); 
+	$result = 403;
+	header("Location: result.php?res=$result"); 
 }
 else
 {
@@ -16,8 +16,8 @@ else
 
 	if(!isset($conn))
 	{
-		$err = 500;
-		header("Location: error.php?err=$err"); 
+		$result = 500;
+		header("Location: result.php?res=$result"); 
 	}
 	else
 	{
@@ -72,17 +72,19 @@ else
 			$mail->Body    = $bodyContent;
 
 			if(!$mail->send()) {
-			    $err = 500;
-				header("Location: error.php?err=$err"); 
+			    $result = 500;
+				header("Location: result.php?res=$result"); 
 			    //echo 'Mailer Error: ' . $mail->ErrorInfo;
 			} else {
-			    echo('Project Request Submitted Succesfully');
+				$result = 200;
+			    $com = "preq submission successful";
+			    header("Location: result.php?res=$result&com=$com"); 
 			}
 		}
 		else
 		{
-			$err = 500;
-			header("Location: error.php?err=$err"); 
+			$result = 500;
+			header("Location: result.php?res=$result"); 
 		}
 	}
 }

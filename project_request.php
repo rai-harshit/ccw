@@ -7,8 +7,8 @@ if(isset($_SESSION['rn']) && isset($_SESSION['eid']))
 	require('db_conn.php');
 	if(!$conn)
 	{
-		$err = 500;
-    	header("Location: error.php?err=$err"); 
+		$result = 500;
+    	header("Location: result.php?res=$result"); 
 	}
 	else
 	{
@@ -21,8 +21,8 @@ if(isset($_SESSION['rn']) && isset($_SESSION['eid']))
 
 		if(!$result)
 		{
-			$err = 500;
-    		header("Location: error.php?err=$err"); 
+			$result = 500;
+    		header("Location: result.php?res=$result"); 
 		}
 		else
 		{
