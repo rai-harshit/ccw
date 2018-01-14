@@ -31,7 +31,7 @@
         .signin_submit{
             clear:both;
         }
-        .login,{
+        .login{
             padding-right: 0%;
             padding-left: 10%;
             padding-top: 3%;
@@ -41,8 +41,8 @@
         .post_login{
             padding-right: 10%;
             padding-left: 10%;
-            padding-top: 5%;
-            padding-bottom:1%;
+            padding-top: 10%;
+            padding-bottom:5%;
             position: relative;
         }
         #login_form
