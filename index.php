@@ -214,7 +214,7 @@
                     }
                 ?>
             </div>
-            <div class="col-md-6" style="margin-top: 10%;clear:both">
+            <div class="col-md-6" style="clear:both">
                 <div class="ideas">
                     <p id="gotideas">Got any cool ideas?</p>
                     <!-- <small style="color: white;margin-left: 15%;font-size: 14px">Submit us your project ideas and we will turn them into reality. --></small>
