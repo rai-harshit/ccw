@@ -67,7 +67,7 @@
         }
         else if($comment === 'signup Succesful')
         {
-            $commentable = "ACTIVATION LINK SENT ! PLEASE CHECK YOUR EMAIL & CLICK ON THE ACTIVATION LINK TO ACTIVATE YOUR ACCOUNT !<br><br> THANKS FOR YOUR TIME.";
+            $commentable = "ACTIVATION LINK SENT !<br> PLEASE CHECK YOUR EMAIL & CLICK ON THE ACTIVATION LINK TO ACTIVATE YOUR ACCOUNT.<br><br> THANKS FOR YOUR TIME.";
         }
     }
 

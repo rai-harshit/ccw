@@ -60,11 +60,6 @@
             width: 100%;
         }
 
-        h2 {
-            font-weight: 600;
-            text-decoration: underline;
-        }
-
         h3 {
             text-align: center;
             padding-top: 5%;
@@ -94,6 +89,13 @@
         }
         #others{
             padding-left: 20%;
+        }
+        small{
+            color:white;
+        }
+        #form-div{
+            background-color: #dee2e6;
+            padding: 5%;
         }
 
 
@@ -167,9 +169,9 @@
                     <div class="row">
                         <div class="col-md-3">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" id="form-div">
                             <div class='login'>
-                                <legend>Report a Bug</legend>
+                                <h2>Report a Bug</h2>
 
                                 <form method="POST" action="bugs_upload.php" id='bugs_form' enctype="multipart/form-data">
 
@@ -205,13 +207,13 @@
                     <div class="row">
                         <div class="col-md-5">
                             <ul id="others">
-                                <li class="other_links"><a href="support_us" style="text-decoration: none;color: white">Support Us</a></li>
+                                <li class="other_links"><a href="support_us.php" style="text-decoration: none;color: white">Support Us</a></li>
                                 <li class="other_links"><a href="#" style="text-decoration: none;color: white">Leaderboard</a></li>
                             </ul>
                         </div>
                         <div class='col-md-6'>
                             <ul id="others">
-                                <li class="other_links"><a href="report_bugs" style="text-decoration: none;color: white">Report a Bug</a>
+                                <li class="other_links"><a href="report_bugs.php" style="text-decoration: none;color: white">Report a Bug</a>
                                 <li class="other_links"><a href="#" style="text-decoration: none;color: white">FAQs</a></li>
                             </ul>
                         </div>
@@ -238,7 +240,7 @@
             </a>
         </div>
         <div class="col-md-12" id="make">
-            <small>&lt;Made by Coders' Club&copy;,FCRIT/&gt;</small></i>
+            <small><b>&lt;Made by Coders' Club&copy;,FCRIT/&gt;</b></small></i>
         </div>
     </div>
 

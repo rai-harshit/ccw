@@ -1,0 +1,252 @@
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+a.navbar-brand {
+    color: rgb(39, 60, 74);
+    font-weight: 800;
+    font-size: 2em;
+    font-family: courier new, fantasy;
+}
+
+ul.navbar-nav mr-auto {
+    background-color: rgb(241, 241, 241);
+    padding: 8px 15px;
+    height: 60px;
+    font-size: 1.5em;
+}
+
+a.nav-link {
+    color: #212737 !important;
+}
+
+a.nav-link:hover {
+    color: #0cbbfc !important;
+    vertical-align: baseline;
+}
+
+
+/**********************************
+**** SIGN IN AND SUBMIT PROJECT ***
+**********************************/
+
+label {
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 2em;
+    font-weight: 500;
+}
+
+input [type="text"],
+input [type="password"] {
+    display: block;
+}
+
+fieldset {
+    width: 30em;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+
+legend {
+    font-weight: 800;
+    color: white;
+    font-stretch: expanded;
+}
+
+#signin-submit-section {
+    background: #212737;
+    color: #b3b3b3;
+    /*margin: 2em auto;*/
+    /*padding: 4em;*/
+}
+
+#sign-in {
+    float: left;
+}
+
+.input {
+    padding: 0.6em 0.4em;
+}
+
+input [type="text"],
+input [type="password"] {
+    padding: 5px;
+}
+
+
+/****************************
+******* SUBMIT PROJECT *****
+***************************/
+
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 50%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1.5em 6em;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#submit-project {
+    float: right;
+    height: 21em;
+    width: 50%;
+    background: url(ps_image_7.jpg) 30% 20% no-repeat;
+}
+
+
+/*#sub-idea {
+    margin-top: 10%;
+    margin-left: 35%;
+    padding: 1em 4em;
+    background-color: ghostwhite;
+}
+
+#sub-idea:hover {
+    background-color: #FFAB1B;
+}*/
+
+/***********************************
+************* SPRITES **************
+***********************************/
+
+#footer {
+    background-color: rgb(33, 39, 55);
+    color: rgb(189, 190, 195);
+}
+
+#footer-list li {
+    list-style-type: none;
+    line-height: 3em;
+}
+
+
+.clearfix :after {
+    /*clear: both;*/
+    /*content: '';*/
+    /*display: block;*/
+}
+
+#footer-list {
+    float: left;
+    margin: 3em 3em;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+#location {
+    float: right;
+    margin: 3em;
+}
+
+.social-sprites {
+    width: 27px;
+    height: 26px;
+    display: inline-block;
+
+}
+
+#twitter {
+    background: url(../../images/social.png) -255px -95px no-repeat;
+}
+
+#facebook {
+    background: url(../../images/social.png) -115px -3px no-repeat;
+}
+
+#google {
+    background: url(../../images/social.png) -171px -66px no-repeat;
+}
+
+#linkedin {
+    background: url(../../images/social.png) -256px -66px no-repeat;
+}
+
+#social-networks {
+    text-align: center;
+    background-color: rgb(29, 35, 51);
+    padding-top: 2em;
+
+}
+
+#make {
+    text-align: center;
+    background-color: rgb(29, 35, 51);
+    padding-bottom: 2em;
+}
+
+/*************************************
+*************************************
+            SIGN UP
+************************************
+***********************************/
+
+form#signup_form {
+    margin: 3em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input[type=submit] {
+    background: none repeat scroll 0 0 #0cbbfc;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    padding: 0.8em 0.9em;
+    display: block;
+    margin: 0.8em 0em;
+    border: none;
+}
+
+ul#others li {
+    line-height: 3em;
+    list-style-type: none;
+}
